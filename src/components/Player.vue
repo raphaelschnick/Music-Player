@@ -48,6 +48,11 @@
             </div>
           </div>
         </div>
+        <form action="#" method="POST">
+          <input type="file" accept=".mp3" />
+          <p>Drag your mp3 here or click in this area.</p>
+          <button type="submit">Upload</button>
+        </form>
       </div>
     </div>
   </div>
@@ -315,7 +320,54 @@ body {
 i {
   cursor: pointer;
 }
-
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  width: 500px;
+  height: 200px;
+  border: 4px dashed #fff;
+}
+form p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 170px;
+  color: black;
+  font-family: Arial;
+}
+form input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+}
+form button {
+  margin: 0;
+  color: #fff;
+  background: #16a085;
+  border: none;
+  width: 508px;
+  height: 35px;
+  margin-top: -20px;
+  margin-left: -4px;
+  border-radius: 4px;
+  border-bottom: 4px solid #117a60;
+  transition: all 0.2s ease;
+  outline: none;
+}
+form button:hover {
+  background: #149174;
+  color: #0c5645;
+}
+form button:active {
+  border: 0;
+}
 .player .cover {
   z-index: -1;
   position: absolute;
